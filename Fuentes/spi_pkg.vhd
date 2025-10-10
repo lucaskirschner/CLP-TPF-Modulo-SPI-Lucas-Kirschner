@@ -18,6 +18,8 @@ package SPI_pkg is
 
   -- Prescaler (factor)
   constant SPI_CLK_PRESCALER_125KBPS  : natural  := 500;
+  constant SPI_CLK_PRESCALER_1MBPS    : natural  := 62;
+  constant SPI_CLK_PRESCALER_12_5MBPS : natural  := 5;
 
   -- Orden de bits
   constant SPI_FIRSTBIT_LSB           : natural  := 0;

@@ -11,7 +11,7 @@ end entity spi_master_tb;
 -- Cuerpo de arquitectura
 architecture spi_master_tb_arq of spi_master_tb is
 	-- Parte declarativa
-	constant CLK_PERIOD : time := 10 ns; -- 100 MHz
+	constant CLK_PERIOD : time := 8 ns; -- 125 MHz
 	constant MISO_BYTE : std_logic_vector(SPI_DATASIZE_8BIT-1 downto 0) := x"55";
 	
 	signal rst_i       : std_logic := '0';
@@ -37,7 +37,7 @@ begin
   generic map(
       SPI_DATA_SIZE => SPI_DATASIZE_8BIT,
       SPI_MODE      => SPI_MODE_0,
-      SPI_CLK_PRE   => 4,                 -- sck = 100MHz/(2*4)=12.5 MHz
+      SPI_CLK_PRE   => SPI_CLK_PRESCALER_12_5MBPS,                 -- spi_clk_o = 125MHz/(2*5)= 12.5 Mbps
       SPI_FIRST_BIT => SPI_FIRSTBIT_MSB
   )
   
