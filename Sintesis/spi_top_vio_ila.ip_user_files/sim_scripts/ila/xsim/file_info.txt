@@ -1,0 +1,2 @@
+ila.vhd,vhdl,xil_defaultlib,../../../../spi_top_vio_ila.srcs/sources_1/ip/ila/sim/ila.vhd,incdir="../../../../spi_top_vio_ila.srcs/sources_1/ip/ila/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

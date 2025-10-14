@@ -1,0 +1,101 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.1
+Espi_master
+Z0 w1760110104
+Z1 DPx4 work 7 spi_pkg 0 22 4?Yn:CDaH2nk=fN8M<cDM2
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dD:\CESE\4B2025\FPGA - Circuitos Logicos Programables\trabajo-practico-final-modulo-spi\Simulacion
+Z6 8D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/trabajo-practico-final-modulo-spi/Fuentes/spi_master.vhd
+Z7 FD:/CESE/4B2025/FPGA - Circuitos Logicos Programables/trabajo-practico-final-modulo-spi/Fuentes/spi_master.vhd
+l0
+L42
+V9NCG;eO>NPbRC^BlMmJ6B2
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1760110135.110000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/trabajo-practico-final-modulo-spi/Fuentes/spi_master.vhd|
+Z11 !s107 D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/trabajo-practico-final-modulo-spi/Fuentes/spi_master.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 EiA8zMUYBC3SSN`j_M9Y22
+!i10b 1
+Aspi_master_arq
+R1
+R2
+R3
+R4
+Z14 DEx4 work 10 spi_master 0 22 9NCG;eO>NPbRC^BlMmJ6B2
+l102
+L73
+V3D@Nm`eoD?13<`BCQ;e:X2
+!s100 @nn>1cNhTjc]D52L88A=U2
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!i10b 1
+Espi_master_tb
+Z15 w1760110090
+R1
+R2
+R3
+R4
+R5
+Z16 8D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/trabajo-practico-final-modulo-spi/Fuentes/spi_master_tb.vhd
+Z17 FD:/CESE/4B2025/FPGA - Circuitos Logicos Programables/trabajo-practico-final-modulo-spi/Fuentes/spi_master_tb.vhd
+l0
+L8
+ViQna9A0YRai5DDNR64NMU1
+!s100 o`@GdDLMB_[C7<z9oj0gO2
+R8
+32
+!i10b 1
+Z18 !s108 1760110135.156000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/trabajo-practico-final-modulo-spi/Fuentes/spi_master_tb.vhd|
+Z20 !s107 D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/trabajo-practico-final-modulo-spi/Fuentes/spi_master_tb.vhd|
+R12
+R13
+Aspi_master_tb_arq
+R14
+R1
+R2
+R3
+R4
+Z21 DEx4 work 13 spi_master_tb 0 22 iQna9A0YRai5DDNR64NMU1
+l34
+L12
+V@DoAHYTTcK3<iTNa2J9co2
+!s100 ViH^_96?OkIoO2n1k3[]l2
+R8
+32
+!i10b 1
+R18
+R19
+R20
+R12
+R13
+Pspi_pkg
+w1760110051
+R5
+8D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/trabajo-practico-final-modulo-spi/Fuentes/spi_pkg.vhd
+FD:/CESE/4B2025/FPGA - Circuitos Logicos Programables/trabajo-practico-final-modulo-spi/Fuentes/spi_pkg.vhd
+l0
+L1
+V4?Yn:CDaH2nk=fN8M<cDM2
+R8
+32
+R12
+R13
+!s100 YGUz;3=@bBhJK2?bzJ9SI0
+!i10b 1
+!s108 1760110135.069000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/trabajo-practico-final-modulo-spi/Fuentes/spi_pkg.vhd|
+!s107 D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/trabajo-practico-final-modulo-spi/Fuentes/spi_pkg.vhd|

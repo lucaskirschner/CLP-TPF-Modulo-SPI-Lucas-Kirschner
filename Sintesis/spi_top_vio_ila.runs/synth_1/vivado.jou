@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Oct 14 00:58:20 2025
+# Process ID: 7196
+# Current directory: C:/Users/Noxie/Desktop/clp-tp-final/Sintesis/spi_top_vio_ila.runs/synth_1
+# Command line: vivado.exe -log spi_top_vio_ila.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_top_vio_ila.tcl
+# Log file: C:/Users/Noxie/Desktop/clp-tp-final/Sintesis/spi_top_vio_ila.runs/synth_1/spi_top_vio_ila.vds
+# Journal file: C:/Users/Noxie/Desktop/clp-tp-final/Sintesis/spi_top_vio_ila.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source spi_top_vio_ila.tcl -notrace
