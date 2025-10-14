@@ -1,0 +1,82 @@
+{D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/CLP-TPF-Modulo-SPI-Lucas-Kirschner/Fuentes/spi_pkg.vhd} {1 {vcom -work work -2002 -explicit {D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/CLP-TPF-Modulo-SPI-Lucas-Kirschner/Fuentes/spi_pkg.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Compiling package SPI_pkg
+
+} {} {}} {D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/CLP-TPF-Modulo-SPI-Lucas-Kirschner/Fuentes/spi_top.vhd} {1 {vcom -work work -2002 -explicit {D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/CLP-TPF-Modulo-SPI-Lucas-Kirschner/Fuentes/spi_top.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package SPI_pkg
+-- Compiling entity spi_top
+-- Compiling architecture spi_top_arq of spi_top
+-- Loading entity spi_core
+
+} {} {}} {D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/CLP-TPF-Modulo-SPI-Lucas-Kirschner/Fuentes/cs_ctrl.vhd} {1 {vcom -work work -2002 -explicit {D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/CLP-TPF-Modulo-SPI-Lucas-Kirschner/Fuentes/cs_ctrl.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package SPI_pkg
+-- Compiling entity cs_ctrl
+-- Compiling architecture cs_ctrl_arq of cs_ctrl
+
+} {} {}} {D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/CLP-TPF-Modulo-SPI-Lucas-Kirschner/Fuentes/spi_top_tb.vhd} {1 {vcom -work work -2002 -explicit {D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/CLP-TPF-Modulo-SPI-Lucas-Kirschner/Fuentes/spi_top_tb.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package SPI_pkg
+-- Compiling entity spi_top_tb
+-- Compiling architecture spi_top_tb_arq of spi_top_tb
+-- Loading entity spi_top
+
+} {} {}} {D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/CLP-TPF-Modulo-SPI-Lucas-Kirschner/Fuentes/miso_capture.vhd} {1 {vcom -work work -2002 -explicit {D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/CLP-TPF-Modulo-SPI-Lucas-Kirschner/Fuentes/miso_capture.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package SPI_pkg
+-- Compiling entity miso_capture
+-- Compiling architecture miso_capture_arq of miso_capture
+
+} {} {}} {D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/CLP-TPF-Modulo-SPI-Lucas-Kirschner/Fuentes/clk_gen.vhd} {1 {vcom -work work -2002 -explicit {D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/CLP-TPF-Modulo-SPI-Lucas-Kirschner/Fuentes/clk_gen.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package SPI_pkg
+-- Compiling entity clk_gen
+-- Compiling architecture clk_gen_arq of clk_gen
+
+} {} {}} {D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/CLP-TPF-Modulo-SPI-Lucas-Kirschner/Fuentes/spi_core.vhd} {1 {vcom -work work -2002 -explicit {D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/CLP-TPF-Modulo-SPI-Lucas-Kirschner/Fuentes/spi_core.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package SPI_pkg
+-- Compiling entity spi_core
+-- Compiling architecture spi_core_arq of spi_core
+-- Loading entity clk_gen
+-- Loading entity mosi_transfer
+-- Loading entity miso_capture
+-- Loading entity cs_ctrl
+
+} {} {}} {D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/CLP-TPF-Modulo-SPI-Lucas-Kirschner/Fuentes/mosi_transfer.vhd} {1 {vcom -work work -2002 -explicit {D:/CESE/4B2025/FPGA - Circuitos Logicos Programables/CLP-TPF-Modulo-SPI-Lucas-Kirschner/Fuentes/mosi_transfer.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package SPI_pkg
+-- Compiling entity mosi_transfer
+-- Compiling architecture mosi_transfer_arq of mosi_transfer
+
+} {} {}}

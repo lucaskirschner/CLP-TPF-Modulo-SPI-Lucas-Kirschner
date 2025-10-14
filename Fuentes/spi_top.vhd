@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 -- Descripción:  SPI (Interfaz Periferica Serial) Maestro
---               Con capacidad para un único Chip Select/Slave Select
+--               Con capacidad para un unico Chip Select/Slave Select
 --
 --               Permite la transferencia síncrona de datos en palabras de 
 --               longitud configurable de 8 o 16 bits, pudiendo seleccionar
@@ -13,21 +13,20 @@
 --                2   |             1              |          0
 --                3   |             1              |          1
 --
--- Nota:          clk_i debe ser al menos 2 veces más rápido que spi_clk_i.
---
 -- Parámetros: 
---               SPI_MODE : Define el modo de operación SPI (0, 1, 2 o 3).
+--               MODE : Define el modo de operación SPI (0, 1, 2 o 3).
 --
 --               DATA_SIZE : Define la longitud de palabra de datos, 
 --               pudiendo seleccionarse entre 8 o 16 bits.
+--               
+--               FIRST_BIT : Define si se trasnmite primero el bit más 
+--               significativo (FIRSTBIT_MSB) el el menos significativo (FIRSTBIT_LSB)
 --
---               SPI_CLK_PRE : Ajusta la frecuencia de spi_clk_o. 
---               spi_clk_o se deriva de spi_clk_i. Se establece como un número 
---               entero de ciclos de reloj por cada medio bit de datos SPI.
---               Ejemplo: con spi_clk_i = 100 MHz y SPI_CLK_PRE = 2, 
---               se obtiene spi_clk_o = 25 MHz.
+--               CLOCK_RATE_HZ : Frecuencia de entrada clk_i según la FPGA
 --
---               CS: Este módulo controla automáticamente la señal CS, 
+--               SCK_TARGET_HZ : Frecuencia objetivo para la comunicación SPI
+--
+--               CS : Este módulo controla automáticamente la señal CS, 
 --               manteniéndola baja durante la transferencia y 
 --               liberándola al finalizar la comunicación.
 -------------------------------------------------------------------------------
@@ -41,11 +40,11 @@ use work.spi_pkg.all;
 -- Declaracion de entidad
 entity spi_top is
   generic(
-    DATA_SIZE     : positive  := DATASIZE_8BIT;
-    MODE          : natural   := MODE_0;
-    FIRST_BIT     : natural   := FIRSTBIT_MSB;
-    CLOCK_RATE_HZ : positive  := 125000000;
-    SCK_TARGET_HZ : positive  := 12500000
+    DATA_SIZE     : positive  := DATASIZE_8BIT; -- largo de la trama
+    MODE          : natural   := MODE_0;        -- modo SPI
+    FIRST_BIT     : natural   := FIRSTBIT_MSB;  -- orden de transferencia
+    CLOCK_RATE_HZ : positive  := 125e6;         -- clk_i => 125 MHz
+    SCK_TARGET_HZ : positive  := 125e5          -- spi_clk_o => 12,5 Mbps
   );
     
   port(

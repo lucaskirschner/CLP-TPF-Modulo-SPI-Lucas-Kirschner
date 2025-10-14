@@ -7,7 +7,7 @@ use work.spi_pkg.all;
 -- Declaracion de entidad
 entity spi_top_vio_ila is
   port(
-    clk_i     : in std_logic_vector(0 downto 0)     -- lo unico que entra a la FPGA es el reloj
+    clk_i     : in std_logic     -- lo unico que entra a la FPGA es el reloj
   );   
   
 end entity spi_top_vio_ila;
@@ -16,15 +16,15 @@ architecture spi_top_vio_ila_arq of spi_top_vio_ila is
   
   component spi_top
   port(
-    rst_i     : in std_logic;
-    clk_i     : in std_logic;
+    rst_i       : in std_logic;
+    clk_i       : in std_logic;
     
-    tx_data_i : in  std_logic_vector(7 downto 0);
-    tx_dv_i   : in  std_logic;
-    tx_rdy_o  : out std_logic;
+    tx_data_i   : in  std_logic_vector(7 downto 0);
+    tx_dv_i     : in  std_logic;
+    tx_rdy_o    : out std_logic;
     
-    rx_data_o : out std_logic_vector(7 downto 0);
-    rx_dv_o   : out std_logic;
+    rx_data_o   : out std_logic_vector(7 downto 0);
+    rx_dv_o     : out std_logic;
     
     spi_clk_o   : out std_logic;
     spi_mosi_o  : out std_logic;
@@ -35,10 +35,10 @@ architecture spi_top_vio_ila_arq of spi_top_vio_ila is
   
   component vio
     port (
-        clk       : in std_logic_vector(0 downto 0);
-        probe_in0 : in std_logic_vector(0 downto 0);
-        probe_in1 : in std_logic_vector(7 downto 0);
-        probe_in2 : in std_logic_vector(0 downto 0);
+        clk        : in  std_logic_vector(0 downto 0);
+        probe_in0  : in  std_logic_vector(0 downto 0);
+        probe_in1  : in  std_logic_vector(7 downto 0);
+        probe_in2  : in  std_logic_vector(0 downto 0);
         probe_out0 : out std_logic_vector(0 downto 0);
         probe_out1 : out std_logic_vector(7 downto 0);
         probe_out2 : out std_logic_vector(0 downto 0);
@@ -51,12 +51,11 @@ architecture spi_top_vio_ila_arq of spi_top_vio_ila is
         clk    : in std_logic_vector(0 downto 0);
         probe0 : in std_logic_vector(0 downto 0); 
         probe1 : in std_logic_vector(0 downto 0);
-        probe2 : in std_logic_vector(0 downto 0);
-        probe3 : in std_logic_vector(0 downto 0)
+        probe2 : in std_logic_vector(0 downto 0)
   );
   end component;
   
-  signal probe_rst  : std_logic_vector(0 downto 0);
+  signal probe_rst        : std_logic_vector(0 downto 0);
   
   signal probe_tx_data_i  : std_logic_vector(7 downto 0);
   signal probe_tx_dv_i    : std_logic_vector(0 downto 0);
@@ -73,8 +72,8 @@ architecture spi_top_vio_ila_arq of spi_top_vio_ila is
 begin
   spi_top_inst : spi_top
     port map(
-      rst_i       => probe_rst(0),           -- salida del vio -> 1 bit
-      clk_i       => clk_i(0),               -- reloj general
+      rst_i       => probe_rst,              -- salida del vio -> 1 bit
+      clk_i       => clk_i,                  -- reloj general
     
       tx_data_i   => probe_tx_data_i,        -- salida del vio -> 8 bits (dato a transmitir)
       tx_dv_i     => probe_tx_dv_i(0),       -- salida del vio -> 1 bit (pulso dato valido para transmitir)
@@ -106,7 +105,6 @@ begin
         clk => clk_i,
         probe0 => probe_spi_clk_o, 
         probe1 => probe_spi_mosi_o,
-        probe2 => probe_spi_cs_o,
-        probe3 => clk_i
+        probe2 => probe_spi_cs_o
       );
 end architecture spi_top_vio_ila_arq;
