@@ -7,7 +7,7 @@ use work.spi_pkg.all;
 -- Declaracion de entidad
 entity spi_top_vio_ila is
   port(
-    clk_i     : in std_logic     -- lo unico que entra a la FPGA es el reloj
+    clk_i     : in std_logic_vector(0 downto 0)  -- lo unico que entra a la FPGA es el reloj
   );   
   
 end entity spi_top_vio_ila;
@@ -72,8 +72,8 @@ architecture spi_top_vio_ila_arq of spi_top_vio_ila is
 begin
   spi_top_inst : spi_top
     port map(
-      rst_i       => probe_rst,              -- salida del vio -> 1 bit
-      clk_i       => clk_i,                  -- reloj general
+      rst_i       => probe_rst(0),           -- salida del vio -> 1 bit
+      clk_i       => clk_i(0),               -- reloj general
     
       tx_data_i   => probe_tx_data_i,        -- salida del vio -> 8 bits (dato a transmitir)
       tx_dv_i     => probe_tx_dv_i(0),       -- salida del vio -> 1 bit (pulso dato valido para transmitir)

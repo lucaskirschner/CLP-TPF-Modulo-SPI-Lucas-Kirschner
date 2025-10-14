@@ -1,0 +1,1 @@
+vio.vhd,vhdl,xil_defaultlib,../../../../spi_top_vio_ila.srcs/sources_1/ip/vio/sim/vio.vhd,incdir="../../../../spi_top_vio_ila.srcs/sources_1/ip/vio/hdl/verilog"incdir="../../../../spi_top_vio_ila.srcs/sources_1/ip/vio/hdl"
